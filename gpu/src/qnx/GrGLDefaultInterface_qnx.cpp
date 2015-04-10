@@ -126,7 +126,7 @@ void GrGLSetDefaultGLInterface() {
         gDefaultInterface.fSampleCoverage = glSampleCoverage;
         gDefaultInterface.fScissor = glScissor;
         gDefaultInterface.fShaderBinary = glShaderBinary;
-        gDefaultInterface.fShaderSource = glShaderSource;
+        gDefaultInterface.fShaderSource = (GrGLShaderSourceProc) glShaderSource;
         gDefaultInterface.fStencilFunc = glStencilFunc;
         gDefaultInterface.fStencilFuncSeparate = glStencilFuncSeparate;
         gDefaultInterface.fStencilMask = glStencilMask;
